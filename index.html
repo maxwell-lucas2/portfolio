@@ -3,100 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maxwell Lucas | Controls & Systems Engineer</title>
+    <title>Maxwell Lucas | Robotics & Control Systems</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0b0f1a; color: #cbd5e1; }
-        .glass-card { background: rgba(30, 41, 59, 0.4); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
-        .glass-card:hover { border-color: rgba(59, 130, 246, 0.5); transform: translateY(-2px); }
-        .tech-tag { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 4px 10px; border-radius: 6px; background: rgba(59, 130, 246, 0.1); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.2); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #080b14; color: #cbd5e1; scroll-behavior: smooth; }
+        .code-font { font-family: 'Fira Code', monospace; }
+        .glass-card { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.08); }
+        .accent-gradient { background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%); }
+        .syntax-keyword { color: #ff79c6; }
+        .syntax-func { color: #50fa7b; }
+        .syntax-comment { color: #6272a4; }
     </style>
 </head>
 <body>
 
     <nav class="fixed w-full z-50 p-6">
-        <div class="max-w-6xl mx-auto flex justify-between items-center glass-card rounded-2xl px-6 py-3">
-            <div class="font-bold text-white tracking-tighter">M.LUCAS<span class="text-blue-500">.ENGINEER</span></div>
-            <div class="flex gap-6 text-[10px] font-bold tracking-widest uppercase">
-                <a href="#controls" class="hover:text-blue-400">Controls</a>
-                <a href="#hardware" class="hover:text-blue-400">Hardware</a>
-                <a href="mailto:contact@maxwelllucas.engineer" class="text-blue-400">Contact</a>
+        <div class="max-w-6xl mx-auto flex justify-between items-center glass-card rounded-2xl px-8 py-4 border-b border-white/5">
+            <div class="font-extrabold text-white tracking-tighter text-lg">M.LUCAS<span class="text-blue-500">_LABS</span></div>
+            <div class="flex gap-8 text-[11px] font-bold tracking-[0.2em] uppercase">
+                <a href="#thesis" class="hover:text-blue-400 transition">Control Theory</a>
+                <a href="#sampler" class="hover:text-blue-400 transition">Systems Design</a>
+                <a href="#" class="text-blue-400 border border-blue-400/20 px-4 py-2 rounded-lg hover:bg-blue-400 hover:text-white transition">Resume</a>
             </div>
         </div>
     </nav>
 
-    <section class="pt-40 pb-20 px-6 max-w-6xl mx-auto">
-        <h1 class="text-6xl md:text-8xl font-extrabold text-white tracking-tighter mb-6">Autonomous <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Systems Design.</span></h1>
-        <p class="max-w-2xl text-lg text-slate-400 leading-relaxed">Honors Thesis researcher in Sliding Mode Control and Systems Engineer for automated rocket propellant sampling. Bridging the gap between non-linear math and deployable hardware.</p>
-    </section>
-
-    <section id="controls" class="py-20 px-6 max-w-6xl mx-auto">
-        <div class="grid lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-7">
-                <div class="tech-tag mb-4 inline-block">Honors Thesis</div>
-                <h2 class="text-4xl font-bold text-white mb-6">Robust SMC for Tethered Multi-Agent Systems</h2>
-                <p class="mb-6 leading-relaxed text-slate-400">Solving the "slack-tether" problem in coordinated drone lifts using <strong>Non-linear Sliding Mode Control</strong> and boundary-layer chattering reduction.</p>
-                <div class="grid grid-cols-2 gap-4 text-sm font-mono">
-                    <div class="p-4 glass-card rounded-xl"><span class="text-blue-400 block font-bold text-lg">0.001s</span> RK4 Integration Step</div>
-                    <div class="p-4 glass-card rounded-xl"><span class="text-emerald-400 block font-bold text-lg">Robust</span> Boundary Layer Tracking</div>
-                </div>
-            </div>
-            <div class="lg:col-span-5 bg-slate-900 aspect-square rounded-3xl border border-slate-800 flex items-center justify-center relative overflow-hidden">
-                <p class="text-slate-600 font-mono text-xs">[ SMC SIMULATION VIEW ]</p>
-            </div>
+    <section class="relative pt-48 pb-32 px-6 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent -z-10"></div>
+        <div class="max-w-5xl mx-auto">
+            <h1 class="text-7xl md:text-8xl font-black text-white tracking-tighter mb-8 leading-none">
+                Robotics <br>& Robust <span class="text-transparent bg-clip-text accent-gradient">Control.</span>
+            </h1>
+            <p class="text-xl text-slate-400 max-w-2xl leading-relaxed mb-12">
+                Mechanical Engineering student at UVM Honors College. Specialized in non-linear Sliding Mode Control (SMC) and automated fluid systems for aerospace applications.
+            </p>
         </div>
     </section>
 
-    <section id="hardware" class="py-20 px-6 bg-slate-900/30 border-y border-slate-800/50">
+    <section id="thesis" class="py-24 px-6 border-t border-white/5">
         <div class="max-w-6xl mx-auto">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
-                <div class="lg:col-span-5 order-2 lg:order-1 bg-slate-950 aspect-video rounded-3xl border border-slate-800 flex items-center justify-center">
-                    <p class="text-slate-600 font-mono text-xs">[ HARDWARE RENDERING ]</p>
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div>
+                    <span class="text-blue-500 font-bold tracking-widest uppercase text-xs">Research Thesis</span>
+                    <h2 class="text-5xl font-extrabold text-white mt-2">Dual-Quadcopter SMC</h2>
                 </div>
-                <div class="lg:col-span-7 order-1 lg:order-2">
-                    <div class="tech-tag mb-4 inline-block">SEED TEAM 480</div>
-                    <h2 class="text-4xl font-bold text-white mb-6">Automated Propellant Sampling Device</h2>
-                    <p class="mb-6 leading-relaxed text-slate-400">Designed a mission-critical device to reduce propellant assay measurement times from <strong>days to <2 hours</strong>. Built to handle 120V max voltage and precision fluid measurement (±0.001g).</p>
-                    
-                    <ul class="space-y-4 text-sm">
-                        <li class="flex gap-3 items-start"><i class="fas fa-check-circle text-blue-500 mt-1"></i> <span><strong>Hardware Validation:</strong> Oscilloscope testing of flow sensors to map frequency to volumetric flow rate.</span></li>
-                        <li class="flex gap-3 items-start"><i class="fas fa-check-circle text-blue-500 mt-1"></i> <span><strong>Fluid Logistics:</strong> Implemented enclosed vial systems with needle injection to prevent air contamination.</span></li>
-                    </ul>
+                <div class="flex gap-4">
+                    <div class="text-right">
+                        <p class="text-[10px] uppercase tracking-widest text-slate-500">Controller Type</p>
+                        <p class="text-white font-mono font-bold">Non-linear SMC</p>
+                    </div>
+                    <div class="w-px h-10 bg-white/10"></div>
+                    <div class="text-right">
+                        <p class="text-[10px] uppercase tracking-widest text-slate-500">Integrator</p>
+                        <p class="text-white font-mono font-bold">RK4 (0.001s)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 mb-12">
+                <div class="space-y-6">
+                    <p class="text-lg text-slate-400 leading-relaxed">
+                        To solve the problem of coordinated aerial lifting, I developed a control architecture for two quadcopters tethered to a single mass. Standard PID fails under the non-linear pendulous disturbances of a payload; my implementation utilizes a **Sliding Surface** for finite-time convergence.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-6 glass-card rounded-2xl border-l-4 border-blue-500">
+                            <h4 class="text-white font-bold mb-2">V-Formation</h4>
+                            <p class="text-sm text-slate-500">Geometry calculated via <code>VFormationPlanner.m</code> to maintain tension and avoid collisions.</p>
+                        </div>
+                        <div class="p-6 glass-card rounded-2xl border-l-4 border-emerald-500">
+                            <h4 class="text-white font-bold mb-2">Robustness</h4>
+                            <p class="text-sm text-slate-500">Includes chattering reduction using boundary layer saturation ($\phi$).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                    <div class="bg-slate-800 px-4 py-2 flex items-center justify-between border-b border-white/5">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest font-mono">SMCController.m</span>
+                        <div class="flex gap-1.5">
+                            <div class="w-2.5 h-2.5 rounded-full bg-red-500/20"></div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/20"></div>
+                            <div class="w-2.5 h-2.5 rounded-full bg-green-500/20"></div>
+                        </div>
+                    </div>
+                    <div class="bg-[#0d1117] p-6 text-[13px] leading-relaxed code-font overflow-x-auto text-blue-100">
+                        <pre>
+<span class="syntax-keyword">function</span> [u, s] = compute(obj, e, e_dot)
+    <span class="syntax-comment">% Sliding surface: s = e_dot + lambda * e</span>
+    s = e_dot + obj.lambda * e;
+    
+    <span class="syntax-comment">% Equivalent Control</span>
+    u_eq = obj.lambda * e_dot;
+    
+    <span class="syntax-comment">% Switching Control (Saturation for Chattering)</span>
+    <span class="syntax-keyword">if</span> abs(s) <= obj.phi
+        sat_s = s / obj.phi;
+    <span class="syntax-keyword">else</span>
+        sat_s = sign(s);
+    <span class="syntax-keyword">end</span>
+    
+    u_sw = obj.eta * sat_s;
+    u = u_eq + u_sw;
+<span class="syntax-keyword">end</span></pre>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 px-6 max-w-6xl mx-auto text-center">
-        <h3 class="text-2xl font-bold text-white mb-12">System Performance Metrics</h3>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div class="p-6 glass-card rounded-2xl">
-                <div class="text-3xl font-bold text-white">±0.001g</div>
-                <div class="text-[10px] text-slate-500 uppercase mt-2 tracking-widest">Measurement Precision</div>
+    <section id="sampler" class="py-24 px-6 bg-slate-900/20 border-y border-white/5">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16">
+                <span class="text-emerald-500 font-bold tracking-widest uppercase text-xs">Systems Engineering (SEED Team 480)</span>
+                <h2 class="text-5xl font-extrabold text-white mt-2">Autonomous Propellant Sampler</h2>
             </div>
-            <div class="p-6 glass-card rounded-2xl">
-                <div class="text-3xl font-bold text-white">< 2hr</div>
-                <div class="text-[10px] text-slate-500 uppercase mt-2 tracking-widest">Cycle Time Goal</div>
-            </div>
-            <div class="p-6 glass-card rounded-2xl">
-                <div class="text-3xl font-bold text-white">40°</div>
-                <div class="text-[10px] text-slate-500 uppercase mt-2 tracking-widest">V-Formation Half-Angle</div>
-            </div>
-            <div class="p-6 glass-card rounded-2xl">
-                <div class="text-3xl font-bold text-white">RK4</div>
-                <div class="text-[10px] text-slate-500 uppercase mt-2 tracking-widest">Numeric Integration</div>
+
+            <div class="grid lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-8 space-y-8">
+                    <div class="glass-card p-8 rounded-3xl relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition">
+                            <i class="fas fa-flask text-8xl text-emerald-500"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4 italic underline decoration-emerald-500">The Problem</h3>
+                        <p class="text-slate-400 text-lg leading-relaxed">
+                            Rocket propellant testing traditionally involves days of lab analysis. My team engineered an autonomous sampling device to reduce cycle times to **under 2 hours** by automating the fluid extraction and measurement process for UV/Vis and particulate analysis.
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
+                            <h4 class="text-white font-bold mb-3"><i class="fas fa-microchip mr-2 text-blue-500"></i> Hardware Integration</h4>
+                            <ul class="text-sm text-slate-400 space-y-2">
+                                <li>• Oscilloscope validation of Square Wave flow sensors.</li>
+                                <li>• Turntable motor integration for multi-vial handling.</li>
+                                <li>• Precision fluid logistics via needle-injection modules.</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
+                            <h4 class="text-white font-bold mb-3"><i class="fas fa-shield-alt mr-2 text-emerald-500"></i> Critical Specs</h4>
+                            <ul class="text-sm text-slate-400 space-y-2">
+                                <li>• <strong>Max Voltage:</strong> 120V Standard.</li>
+                                <li>• <strong>Measurement:</strong> ~1.8g ± 0.001g precision.</li>
+                                <li>• <strong>Volume:</strong> Supports 25mL DI Water mixing.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-4 space-y-6">
+                    <div class="aspect-[4/5] bg-slate-950 rounded-3xl border border-white/10 flex flex-col items-center justify-center p-8 text-center">
+                        <div class="w-16 h-16 rounded-full accent-gradient flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(59,130,246,0.5)]">
+                            <i class="fas fa-cube text-white text-2xl"></i>
+                        </div>
+                        <p class="text-white font-bold text-lg mb-2 underline decoration-blue-500 decoration-4">CAD & Prototype</p>
+                        <p class="text-slate-500 text-xs font-mono uppercase">Sprint 4 Finalized Design</p>
+                        <p class="mt-6 text-slate-400 text-sm italic">"Device must function without nitrogen gas supply while maintaining enclosed atmosphere to prevent contamination."</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-20 text-center border-t border-slate-900">
-        <div class="flex justify-center gap-8 mb-8 text-slate-500">
-            <a href="#" class="hover:text-white transition"><i class="fab fa-linkedin"></i></a>
-            <a href="#" class="hover:text-white transition"><i class="fab fa-github"></i></a>
+    <section class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <p class="text-4xl font-black text-white mb-1">40°</p>
+                <p class="text-[10px] text-slate-500 font-bold tracking-widest uppercase">Formation Angle</p>
+            </div>
+            <div class="text-center">
+                <p class="text-4xl font-black text-white mb-1">0.001g</p>
+                <p class="text-[10px] text-slate-500 font-bold tracking-widest uppercase">Sampling Precision</p>
+            </div>
+            <div class="text-center">
+                <p class="text-4xl font-black text-white mb-1">2.0hr</p>
+                <p class="text-[10px] text-slate-500 font-bold tracking-widest uppercase">Cycle Goal</p>
+            </div>
+            <div class="text-center">
+                <p class="text-4xl font-black text-white mb-1">RK4</p>
+                <p class="text-[10px] text-slate-500 font-bold tracking-widest uppercase">Integrator Model</p>
+            </div>
         </div>
-        <p class="text-[10px] tracking-[0.3em] font-bold text-slate-600">MAXWELL LUCAS | B.S. MECHANICAL ENGINEERING</p>
+    </section>
+
+    <footer class="py-20 text-center border-t border-white/5">
+        <p class="text-xs font-mono text-slate-600 tracking-widest uppercase mb-4">Developed by Maxwell Lucas | B.S. Mechanical Engineering</p>
+        <div class="flex justify-center gap-6">
+            <a href="#" class="text-slate-400 hover:text-white transition"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-slate-400 hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:contact@maxwelllucas.engineer" class="text-slate-400 hover:text-white transition"><i class="fas fa-envelope"></i></a>
+        </div>
     </footer>
 
 </body>
